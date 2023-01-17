@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://8.130.47.15/springboot?useSSL=false&serverTimezone=UTC
+      username: root
+      password: abc123
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+      table-prefix: tbl_
+  configuration:
+    #配置日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: com.aae.mybatisplus.pojo
